@@ -34,9 +34,10 @@ int main(int argc, char **argv){
         }
             
         // for(map<pair<int, int>, int>::iterator k=M_in.begin();k!=M_in.end();k++){
-        //     cout<<k->first.first<<" "<<k->first.second<<" "<<k->second<<endl;
-        // }
-        // cout<<"-------"<<endl;
+//             cout<<k->first.first<<" "<<k->first.second<<" "<<k->second<<endl;
+//         }
+//         cout<<"-------"<<endl;
+//
         //user output
         
         for(int i=0;i<(1<<(N-1))-1;i++){
@@ -46,10 +47,12 @@ int main(int argc, char **argv){
             pair<int, int> c =make_pair(a,b);
             M_user[c]++;
         }
+        
         // for(map<pair<int, int>, int>::iterator k=M_user.begin();k!=M_user.end();k++){
-        //     cout<<k->first.first<<" "<<k->first.second<<" "<<k->second<<endl;
-        // }
-        // cout<<endl;
+//             cout<<k->first.first<<" "<<k->first.second<<" "<<k->second<<endl;
+//         }
+//         cout<<endl;
+        
         if(M_in.size()!=M_user.size()) ret=1;
         for(map<pair<int, int>, int>::iterator a=M_in.begin();a!=M_in.end();a++){
             if(a->second!=M_user[a->first]) ret=1;
