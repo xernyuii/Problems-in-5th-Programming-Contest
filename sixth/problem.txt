@@ -1,0 +1,51 @@
+JavaScript 的 JSON.parse() 方法用于将一个 JSON 字符串转换为对象。
+
+林喵喵对这个功能非常感兴趣,想用C++写一个JSON的简易parser
+
+
+INPUT
+
+
+输入一个有效的 JSON 的字符串
+
+生成一个转换后的对象,并有n次访问
+
+
+OUTPUT
+
+按照对应操作输出
+
+
+
+多组数据
+每组数据第一行有一个待解析的JSON字符串
+第二行有一个数字n n<10000
+接下来有n次访问, 输入的也是一个字符串
+
+
+
+输出访问的对象,以换行分隔
+访问错误则输出 "_ERROR" (没有引号)
+
+
+
+
+SAMPLE_INPUT
+
+
+{"sites":[{"name":"XCOJ","url":"xcacm.hfut.edu.cn"},{"name":"Google","url":"www.google.com"},{"name":"Taobao" ,"url":"www.taobao.com"}]}
+2
+sites[0].name
+sites[1].url
+{"a":"a1","b":"hello","c":[{"cc1":"hi"},{"cc2":"world"}]}
+2
+b
+c[1].cc2
+
+
+SAMPLE_OUTPUT
+
+XCOJ
+www.google.com
+hello
+world
